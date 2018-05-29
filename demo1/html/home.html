@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+      <title>title</title>
+      <link rel="stylesheet" type="text/css" href="../css/api.css"/>
+      <style>
+          body{
+
+          }
+          #appHeader{width:100%; height:200px; background:#ff793f;}
+          #appHeader h4{width:100%; height:44px; line-height: 44px; font-size:16px; text-align: center; color:#fff; letter-spacing: 2px;}
+          #input{width:80%; height:30px; border:1px solid #000; margin:20px;}
+      </style>
+  </head>
+  <body>
+      <header id="appHeader">
+          <h4>首页</h4>
+      </header>
+      <div>
+
+        <ul>
+          <li>测试列表22</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+          <li>测试列表</li>
+        </ul>
+      </div>
+  </body>
+  <script type="text/javascript" src="../script/api.js"></script>
+  <script type="text/javascript">
+      apiready = function(){
+          var appHeader = $api.byId('appHeader');
+          var appFooter = $api.byId('appFooter');
+          var appHeaderH = $api.offset(appHeader).h;
+
+          var appFooterH = $api.getStorage('footerH');
+          //console.log(appHeaderH+' '+appFooterH);
+          $api.fixStatusBar(appHeader);
+          var currentScreenHeight = api.winHeight;
+          var frameName = api.frameName;
+          var uiMode = api.uiMode;
+          var operator = api.operator;
+          var currentNet = api.connectionType;
+          var width = api.screenWidth;
+          var height = api.screenHeight;
+          var winName = api.winName;
+          //console.log(uiMode+' '+operator+' '+currentNet+' '+width+' '+height+' '+winName);
+          //console.log(frameName);  
+          //console.log(currentScreenHeight);
+          // api.ajax({
+          //     url: 'http://47.94.244.242/Newest/findByOrgCodeByNewest.do',
+          //     method: 'post',
+          //     data: {
+          //         values: {
+          //           orgCode: '100101030000',
+          //           mainType:'2100',
+          //           pageNumber:'1'
+          //         }
+          //     }
+          // }, function(ret, err) {
+          //     if (ret) {
+          //         console.log('成功：'+JSON.stringify(ret));
+          //     } else {
+          //         console.log('失败：'+JSON.stringify(err));
+          //     }
+          // });
+
+      };
+  </script>
+  </html>
