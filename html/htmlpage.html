@@ -8,45 +8,16 @@
       <link rel="stylesheet" href="../css/aui.css">
       <style>
           body{}
-          #appHeader{width:100%; height:200px; background:#ff793f;}
-          #appHeader h4{width:100%; height:44px; line-height: 44px; font-size:16px; text-align: center; color:#fff; letter-spacing: 2px;}
-          #appFooter{border-top:1px solid #eee;}
+
       </style>
   </head>
   <body>
-      <header id="appHeader">
-          <h4>首页</h4>
-      </header>
-      <footer id="appFooter" class="aui-bar aui-bar-tab">
-            <div class="aui-bar-tab-item aui-active" tapmode>
-                <i class="aui-iconfont aui-icon-home"></i>
-                <div class="aui-bar-tab-label">首页</div>
-            </div>
-            <div class="aui-bar-tab-item" tapmode>
-                <i class="aui-iconfont aui-icon-star"></i>
-                <div class="aui-bar-tab-label">收藏</div>
-            </div>
-            <div class="aui-bar-tab-item" tapmode>
-                <div class="aui-badge">99</div>
-                <i class="aui-iconfont aui-icon-cart"></i>
-                <div class="aui-bar-tab-label">购物车</div>
-            </div>
-            <div class="aui-bar-tab-item" tapmode>
-                <div class="aui-dot"></div>
-                <i class="aui-iconfont aui-icon-my"></i>
-                <div class="aui-bar-tab-label">我的</div>
-            </div>
-        </footer>
+
+
   </body>
   <script type="text/javascript" src="../script/api.js"></script>
   <script type="text/javascript">
       apiready = function(){
-          var appHeader = $api.byId('appHeader');
-          var appFooter = $api.byId('appFooter');
-          var appHeaderH = $api.offset(appHeader).h;
-          var appFooterH = $api.offset(appFooter).h;
-          $api.setStorage('footerH', appFooterH);
-          $api.fixStatusBar(appHeader);
           // //创建frameGroup组
           api.openFrameGroup ({
               name: 'appGroup',
